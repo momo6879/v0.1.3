@@ -1,4 +1,4 @@
-**Packages**
+    **Packages**
 1. Terminal - kitty
 2. Browser - firefox 
 3. Bar - waybar
@@ -15,6 +15,7 @@
 14. for nvim lsp config - unzip, npm
 15. Screenshot - grimblast
 16. pywal - for waybar
+17. firefox -> import.json ->stylus 
 - .config
     - hypr
         - color.conf
