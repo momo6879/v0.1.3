@@ -1,0 +1,161 @@
+/* @import 'color/colors-waybar.css'; */
+@import '../../.cache/wal/colors-waybar.css';
+
+@define-color bar-bg rgba(0, 0, 0, 0);
+@define-color main-bg #26233a;
+@define-color main-fg @color7;
+@define-color wb-act-bg #31748f;
+@define-color wb-act-fg #9ccfd8;
+/* @define-color wb-act-fg @color10; */
+@define-color wb-hvr-bg #eb6f92;
+@define-color wb-hvr-fg #f6c177;
+
+* {
+  border: none;
+	font-family: "JetBrainsMono Nerd Font"; /*monospace*/
+	font-weight: bold;
+	min-height: 0;
+  padding: 0;
+  margin: 0;
+	/* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
+	font-size: 11px;
+	font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+	border-radius: 8px;
+}
+
+window#waybar {
+    background: transparent;
+    color: #ffffff;
+}
+
+tooltip {
+    background: #4c4c74;
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #4c4c74;
+}
+
+#workspaces button {
+    box-shadow: none;
+	  text-shadow: none;
+    padding: 0px;
+    border-radius: 9px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: @main-fg;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
+    font-size: 18px;
+}
+
+#workspaces.rw button {
+    border: 0.2px solid #2e2e46;
+    padding: 1px;
+    border-radius: 6px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: @main-fg;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button.active {
+    background: @color5;
+    color: #ffffff;
+    margin-left: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 3px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button:hover {
+    background: #4c4c74;
+    color: #7ba3f7;
+    padding-left: 3px;
+    padding-right: 3px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button.active:hover {
+    background: #4c4c74;
+    color: #7ba3f7;
+    margin-left: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 3px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#clock,
+#cpu,
+#disk,
+#memory,
+#network,
+#bluetooth,
+#pulseaudio,
+#tray,
+#mpris,
+#window,
+#workspaces,
+#custom-updater,
+#custom-pacman {
+    color: @main-fg;
+    background: #2e2e46;
+	  padding-top: 2px;
+    font-weight: Bold;
+	  padding-bottom: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border: 1px solid #2e2e46;
+    border-style: solid;
+    border-color: @main-bg;
+}
+
+#mpris {
+  margin-left: 6px;
+}
+
+#network {
+    min-width: 100px;
+}
+
+@keyframes blink-update {
+	to {
+		background-color: @color5;
+	}
+}
+
+#custom-pacman {
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+#custom-pacman.pending-updates {
+	animation-name: blink-update;
+	animation-duration: 3s;
+}
+
+#custom-updater {
+  margin-left: 6px;
+}
+
+#custom-updates {
+  margin-left: 6px;
+}
+
+#cpu,
+#custom-gpu_usage {
+    min-width: 40px;
+}
+
+

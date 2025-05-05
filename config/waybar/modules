@@ -1,0 +1,552 @@
+{
+  // HYPRLAND WORKSPACES. CHOOSE as desired and place on waybar configs
+  // CIRCLES Style
+  "hyprland/workspaces": {
+    "active-only": false,
+    "all-outputs": true,
+    "format": "{icon}",
+    "show-special": false,
+    "on-click": "activate",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+    },
+    "format-icons": {
+      "active": "",
+      "default": "",
+    },
+  },
+  // ROMAN Numerals style
+  "hyprland/workspaces#roman": {
+    "active-only": false,
+    "all-outputs": true,
+    "format": "{icon}",
+    "show-special": false,
+    "on-click": "activate",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+    },
+    "format-icons": {
+      "1": "I",
+      "2": "II",
+      "3": "III",
+      "4": "IV",
+      "5": "V",
+      "6": "VI",
+      "7": "VII",
+      "8": "VIII",
+      "9": "IX",
+      "10": "X",
+    },
+  },
+  // PACMAN Style
+  "hyprland/workspaces#pacman": {
+    "active-only": false,
+    "all-outputs": true,
+    "format": "{icon}",
+    "on-click": "activate",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    "show-special": false,
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": [],
+      "7": [],
+      "8": [],
+      "9": [],
+      "10": [],
+    },
+    "format-icons": {
+      "active": " 󰮯 ",
+      "default": "󰊠",
+      "persistent": "󰊠",
+      "empty": "󱙝",
+      "special": "",
+    },
+  },
+  // BLANK Style
+  "hyprland/workspaces#blank": {
+    "active-only": false,
+    "all-outputs": true,
+    "format": "{icon}",
+    "on-click": "activate",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    "show-special": false,
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+    },
+    "format-icons": {
+      "active": "     ",
+      "default": " ",
+      "persistent": " ",
+      "empty": " ",
+      "special": " ",
+    },
+  },
+
+  //  NUMBERS and ICONS style
+  "hyprland/workspaces#4": {
+    "format": "{name}",
+    "format": " {name} {icon} ",
+    //"format": " {icon} ",
+    "show-special": false,
+    "on-click": "activate",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    "all-outputs": true,
+    "sort-by-number": true,
+    "format-icons": {
+      "1": " ",
+      "2": " ",
+      "3": " ",
+      "4": " ",
+      "5": " ",
+      "6": " ",
+      "7": "",
+      "8": " ",
+      "9": "",
+      "10": "10",
+      "focused": "",
+      "default": "",
+    },
+  },
+
+// NUMBERS and ICONS style with window rewrite
+"hyprland/workspaces#rw": {
+	"disable-scroll": true,
+	"all-outputs": true,
+	"warp-on-scroll": false,
+	"sort-by-number": true,
+	"show-special": false,
+	"on-click": "activate",
+	"on-scroll-up": "hyprctl dispatch workspace e+1",
+	"on-scroll-down": "hyprctl dispatch workspace e-1",
+	"format": "{icon}:{windows}",
+	"format-window-separator": "",
+	"window-rewrite-default": " 󰊠 ",
+	"window-rewrite": {
+		"title<nvim>": "  ",
+		"class<*.brave.*>": "<span font=\"Font Awesome 5 Free\"> </span> ",
+		"class<kitty>": "  ",
+		"class<nwg-look>": "  ",
+		"class<obsidian>": "  ",
+    "class<org.bleachbit.BleachBit>": " 󰃢 ", 
+		"class<Gimp-.*>": "  ",
+		"class<firefox>": " 󰈹 ",
+    "class<Godot>": "  ",
+    "class<firefox> title<.*github.*>": "  ",
+		"class<nemo>": " 󰝰 ",
+		"class<org.kde.ark>": "  ",
+		"class<mpv>": "  ",
+		"class<Code>": " 󰨞 ",
+    "class<BleachBit>": " 󰃢 ",
+		"class<codium|codium-url-handler|VSCodium>": "󰨞 ",
+		"class<org.nomacs.ImageLounge>": "  ",
+		"class<org-jdownloader-update-launcher-JDLauncher>": " "
+		},
+    // "format-icons": {
+    //   "active": " 󰮯 ",
+    //   "default": "󰊠",
+    //   "persistent": "󰊠",
+    //   "empty": "󱙝",
+    //   "special": "",
+    // },
+    "persistent-workspaces": [1, 2, 3, 4, 5]
+    // "format-icons": {
+    //   "1": "一",
+    //   "2": "二",
+    //   "3": "三",
+    //   "4": "四",
+    //   "5": "五",
+    //   "6": "六",
+    //   "7": "七",
+    //   "8": "八",
+    //   "9": "九",
+    //   "10": "十",
+    // }
+},
+
+  "bluetooth": {
+    "format": "",
+    "format-disabled": "󰂳",
+    "format-connected": "󰂱 {num_connections}",
+    "tooltip-format": " {device_alias}",
+    "tooltip-format-connected": "{device_enumerate}",
+    "tooltip-format-enumerate-connected": " {device_alias} 󰂄{device_battery_percentage}%",
+    "tooltip": true,
+    "on-click": "blueman-manager",
+  },
+
+  "clock": {
+    "interval": 1,
+    "format": " {:%I:%M %p}",
+    //"format": " {:%I:%M:%S %p (%d %a)}",
+    "format-alt": " {:%I:%M %p   %Y, %d %B, %A}",
+    "tooltip-format": "{calendar}",
+    "calendar": {
+        "format": {
+				"months": "<span color='#ffffff'><b>{}</b></span>",
+				"days": "<span color='#ffffff'><b>{}</b></span>",
+				"weekdays": "<span color='#83c092'><b>{}</b></span>",
+				"today": "<span color='#e69875'><b><u>{}</u></b></span>"
+			  }
+    }
+  },
+
+  "actions": {
+    "on-click-right": "mode",
+    "on-click-forward": "tz_up",
+    "on-click-backward": "tz_down",
+    "on-scroll-up": "shift_up",
+    "on-scroll-down": "shift_down"
+  },
+  "cpu": {
+    // "format": "󰍛 {usage}%",
+    "interval": 1,
+    "format-alt-click": "click",
+    "format-alt": "<big>󰍛</big> {icon0}{icon1}{icon2}{icon3} {usage:>2}%",
+    "format": "<big>󰍛</big> {usage}%",
+    // "format": "󰍛 {usage}% {icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}",
+    "format-icons": [
+        "▁",
+        "<span color='#69ff94'>▂</span>", // green
+        "<span color='#2aa9ff'>▃</span>", // blue
+        "<span color='#f8f8f2'>▄</span>", // white
+        "<span color='#ecc6d9'>▅</span>", // white
+        "<span color='#ffffa5'>▆</span>", // yellow
+        "<span color='#ffffa5'>▇</span>", // yellow
+        "<span color='#ff9977'>█</span>", // orange
+        "<span color='#dd532e'>█</span>"  // red
+    ],
+    // "format-icons": [
+    //   "▁",
+    //   "▂",
+    //   "▃",
+    //   "▄",
+    //   "▅",
+    //   "▆",
+    //   "▇",
+    //   "█"
+    // ],
+    "on-click-right": "gnome-system-monitor",
+  },
+  "disk": {
+    "interval": 30,
+    //"format": "󰋊",
+    "path": "/",
+    //"format-alt-click": "click",
+    "format": "<big>󰋊</big> {percentage_used}%",
+    //"tooltip": true,
+    "tooltip-format": "{used} used out of {total} on {path} ({percentage_used}%)",
+  },
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 40,
+    "separate-outputs": true,
+    "offscreen-css": true,
+    "offscreen-css-text": "(inactive)",
+    "rewrite": {
+      "(.*) Brave": "<span font=\"Font Awesome 5 Free\"> </span> $1",
+      "(.*) - fish": "> [$1]",
+      "(.*)mpv": "  [$1]",
+      "(.*)foot": "  [$1]",
+      "(.*)~": "  $1",
+    },
+  },
+  
+  "memory": {
+    "interval": 10,
+    "format": " {used:0.1f}G",
+    "format-alt": " {percentage}%",
+    "format-alt-click": "click",
+    "tooltip": true,
+    "tooltip-format": "{used:0.1f}GB/{total:0.1f}G",
+    "on-click-right": "foot -e btop --utf-force"
+  },
+  "network": {
+    "format": "{ifname}",
+    "format-wifi": "{icon}",
+    "format-ethernet": "󰌘",
+    "format-disconnected": "󰌙",
+    "tooltip-format": "{ipaddr}  {bandwidthUpBytes}  {bandwidthDownBytes}",
+    "format-linked": "󰈁 {ifname} (No IP)",
+    "tooltip-format-wifi": "{essid} {icon} {signalStrength}%",
+    "tooltip-format-ethernet": "{ifname} 󰌘",
+    "tooltip-format-disconnected": "󰌙 Disconnected",
+    "max-length": 50,
+    "format-icons": [
+      "󰤯",
+      "󰤟",
+      "󰤢",
+      "󰤥",
+      "󰤨"
+    ]
+  },
+  "network#speed": {
+    "interval": 1,
+    "format": "{ifname}",
+    "format-wifi": "{icon}  {bandwidthUpBytes}  {bandwidthDownBytes}",
+    "format-ethernet": "󰌘   {bandwidthUpBytes}  {bandwidthDownBytes}",
+    "format-disconnected": "󰌙 <big><span foreground='#FAA0A0'> </span></big>",
+    "tooltip-format": "{ipaddr}",
+    "format-linked": "󰈁 {ifname} (No IP)",
+    "tooltip-format-wifi": "{essid} {icon} {signalStrength}%",
+  "tooltip-format-ethernet": " 󱓞 Ethernet {bandwidthTotalBytes}",
+  "tooltip-format-disconnected": "󰌙 Disconnected",
+    "max-length": 50,
+    "format-icons": [
+      "󰤯",
+      "󰤟",
+      "󰤢",
+      "󰤥",
+      "󰤨"
+    ]
+  },
+  "pulseaudio": {
+    "format": "{icon}{volume}%",
+    "format-bluetooth": "{icon} 󰂰 {volume}%",
+    "format-muted": "<big> </big> 0%",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        " ",
+        " ",
+        "󰕾 ",
+        " "
+      ],
+      "ignored-sinks": [
+        "Easy Effects Sink"
+      ],
+    },
+    "scroll-step": 5,
+    "on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "pavucontrol",
+    "on-scroll-up": "wpctl set-volume -l 1.3 @DEFAULT_SINK@ 5%+",
+    "on-scroll-down": "wpctl set-volume @DEFAULT_SINK@ 5%-",
+    "smooth-scrolling-threshold": 1,
+  },
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": " {volume}%",
+    "format-source-muted": "",
+    "on-click": "~/.config/hypr/scripts/Volume.sh --toggle-mic",
+    "on-click-right": "pavucontrol -t 4",
+    "on-scroll-up": "~/.config/hypr/scripts/Volume.sh --mic-inc",
+    "on-scroll-down": "~/.config/hypr/scripts/Volume.sh --mic-dec",
+    "scroll-step": 5,
+  },
+  
+  "tray": {
+    "icon-size": 17,
+    "spacing": 8,
+    "on-click": "~/.config/hypr/scripts/Volume.sh --toggle",
+    "on-click-right": "pavucontrol -t 3",
+    "on-scroll-up": "~/.config/hypr/scripts/Volume.sh --inc",
+    "on-scroll-down": "~/.config/hypr/scripts/Volume.sh --dec",
+    "format-icons": [
+      "",
+      "",
+      "󰕾",
+      ""
+    ],
+  },
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 16,
+    "all-outputs": false,
+    "icon-theme": "Suru_pywall",
+    "sort-by-app-id": false,
+    "tooltip-format": "{title} {app_id}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "app_ids-mapping": {
+      "Free Download Manager": "fdm"
+    },
+    "ignore-list": [
+      "wofi",
+      "rofi",
+      "foot",
+      "foot-dropterm"
+    ]
+  },
+  //CUSTOM: 
+   
+  // NOTE:! This is only for Arch and Arch Based Distros  
+    "custom/updater": {
+    "format": " {}",
+    "exec": "checkupdates | wc -l",
+    "exec-if": "[[ $(checkupdates | wc -l) ]]",
+    "interval": 15,
+    "on-click": "kitty -T update yay -Syu || sudo pacman -Syu && notify-send 'The system has been updated'",
+  },
+
+  //Updater//
+  "custom/pacman": {
+  "format": "{icon}{0}",
+  "return-type": "json",
+  "format-icons": {
+    "pending-updates": " ",
+    "updated": ""
+  },
+  "on-click": "kitty -T update yay -Syu || sudo pacman -Syu",
+  "exec-if": "which waybar-updates",
+  "exec": "waybar-updates"
+  },
+
+  // Separators
+  "custom/separator#dot": {
+    "format": "",
+    "interval": "once",
+    "tooltip": false
+  },
+  "custom/separator#dot-line": {
+    "format": "",
+    "interval": "once",
+    "tooltip": false
+  },
+  "custom/separator#line": {
+    "format": "|",
+    "interval": "once",
+    "tooltip": false
+  },
+  "custom/separator#blank": {
+    "format": "",
+    "interval": "once",
+    "tooltip": false
+  },
+  "custom/separator#blank_1": {
+    "format": " ",
+    "interval": "once",
+    "tooltip": false
+  },
+  "custom/separator#blank_2": {
+    "format": "  ",
+    "interval": "once",
+    "tooltip": false
+  },
+  // "custom/pacman": {
+  //   "format": " {}",
+  //   "interval": 7200, // every two hours
+  //   "exec": "i=$(checkupdates); echo \"$i\" |wc -l; echo \"$i\" | column -t |tr '\n' '\r'", // # of updates and tooltip details
+  //   "exec-if": "exit 0", // always run; consider advanced run conditions
+  //   "on-click": "foot -e sudo update --noconfirm", // update system
+  //   "signal": 8
+  // },
+  "custom/pacman2": {
+    // "format": "{icon} {}",
+    "format": "{2} {0}",
+    "return-type": "json",
+    "exec-if": "which waybar-module-pacman-updates",
+    "exec": "waybar-module-pacman-updates --interval-seconds 3600",
+    "on-click": "foot -e update --noconfirm",
+    "format-icons": {
+      "has-updates": "󱍷<span foreground='green'><sup></sup></span>",
+      "updated": "󰂪"
+    }
+  },
+  
+    "custom/notification": {
+    "exec": "count=$(dunstctl count history); paused=$(dunstctl is-paused); icon=$( [ \"$paused\" == \"false\" ] && echo -n \"\" || echo -n \"\" ); echo -n \"$icon $count\"",
+    "format": "{} ",
+    // "format-icons": ["", ""],
+    "tooltip-format": "Log {dunstctl count}%",
+    "return-type": "",
+    "on-click": "dunstctl set-paused toggle",
+    "on-click-right": "dunstctl history-clear",
+    "interval": 5
+  },
+  "custom/swaync": {
+    "tooltip": false,
+    // "format": "{icon} {}",
+    "format": "{2} {0}",
+    "format-icons": {
+      "notification": "<span foreground='red'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-inhibited-none": ""
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "sleep 0.1 && swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true,
+  },
+  
+  "mpris": {
+    "format": "{player_icon} {dynamic}",
+    "format-paused": "{status_icon} {player_icon} <i>{dynamic}</i>",
+    "on-click-middle": "playerctl play-pause",
+    "on-click": "playerctl previous",
+    "on-click-right": "playerctl next",
+    "scroll-step": 5.0,
+    "on-scroll-up": "~/.config/hypr/scripts/Volume.sh --inc",
+    "on-scroll-down": "~/.config/hypr/scripts/Volume.sh --dec",
+    "smooth-scrolling-threshold": 1,
+    "player-icons": {
+      "chromium": " ",
+      "default": " ",
+      "firefox": "󰈹 ",
+      "kdeconnect": "",
+      "mopidy": " ",
+      "mpv": " ",
+      "spotify": " ",
+      "vlc": "󰕼 ",
+      "steam": " "
+    },
+    "status-icons": {
+      "paused": "",
+      "playing": "",
+      "stopped": "",
+    },
+    // "ignored-players": ["mpv"]
+    "max-length": 30,
+  },
+   
+//   "mpris": {
+//     "format": " : {player_icon} {dynamic}",
+//     "format-paused": " : {status_icon} <i>{dynamic}</i>",
+//     "player-icons": {
+//       "default": "▶",
+//       "mpv": "🎵"
+//     },
+//     "status-icons": {
+//       "paused": "⏸"
+//     },
+//     // "ignored-players": ["firefox"]
+// },
+   "custom/calculator": {
+    "format": " ",
+    "on-click": "qalculate-gtk",
+    "tooltip": false
+  },
+}
